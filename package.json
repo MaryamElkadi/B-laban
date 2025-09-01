@@ -1,5 +1,6 @@
 {
   "name": "blaban",
+  "homepage": " https://maryamelkadi.github.io/B-laban/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": " https://maryamelkadi.github.io/B-laban/"
+    "predeploy": "npm run buid",
+    "deploy": "gh-pages -d list"
+   
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
