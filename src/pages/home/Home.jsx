@@ -69,7 +69,7 @@ export default function Home() {
         
         {/* Content */}
         <div className="box container w-4/5 md:w-2/3 lg:w-1/2 h-auto p-8 bg-blue-700/20 text-white mt-40 rounded-2xl backdrop-blur-lg border border-white/10 flex flex-col justify-center items-center relative z-10">
-          <h1 className='text-4xl md:text-6xl lg:text-8xl font-bold text-center mb-6'>
+          <h1 className='text-4xl md:text-6xl lg:text-8xl font-bold text-center mb-6 font-[family-name:main-font]'>
             Bblabn ,<br /> Just for you 
           </h1>
           <button 
