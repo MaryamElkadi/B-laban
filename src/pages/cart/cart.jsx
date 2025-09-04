@@ -44,6 +44,7 @@ export default function Cart() {
   const handleCheckout = () => {
     if (cart.length === 0) {
       toast.error("Your cart is empty!");
+      
       return;
     }
 
@@ -62,7 +63,7 @@ export default function Cart() {
     setCart([]);
 
     // navigate to orders page
-    navigate("/orders");
+    navigate("/checkout");
   };
 
   return (

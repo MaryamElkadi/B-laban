@@ -59,15 +59,31 @@ export default function Home() {
 
   return (
     <>
-<div className="home flex justify-center items-center w-full h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundHome})` }}>
+ <div className="min-h-screen flex flex-col items-center justify-center">
+      {/* Background with overlay */}
+      <div className="home flex justify-center items-center w-full h-screen bg-cover bg-center bg-no-repeat relative"
+           style={{ backgroundImage: `url(${backgroundHome})` }}>
+        
+        {/* Transparent black overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        {/* Content */}
+        <div className="box container w-4/5 md:w-2/3 lg:w-1/2 h-auto p-8 bg-blue-700/20 text-white mt-40 rounded-2xl backdrop-blur-lg border border-white/10 flex flex-col justify-center items-center relative z-10">
+          <h1 className='text-4xl md:text-6xl lg:text-8xl font-bold text-center mb-6'>
+            Bblabn ,<br /> Just for you 
+          </h1>
+          <button 
+            onClick={handleProducts} 
+            className='text-xl font-semibold px-8 py-4 bg-blue-900/80 text-white rounded-2xl mt-6 backdrop-blur-sm hover:bg-gray-600 transition-all ease-in-out duration-300'
+          >
+            Order now
+          </button>
+        </div>
+      </div>
 
-      
-<div className="box container w-150 h-75 bg-blue-700/20 text-black mt-40 rounded-2xl backdrop-blur-lg border border-white/10 flex flex-col justify-center items-center">
-    <h1 className='text-8xl font-[family-name:main-font] text-center'>Bblabn ,<br /> Just for you </h1>
-    <button onClick={handleProducts} className='text-xl font-[family-name:main-font] px-10 py-5 bg-blue-900/80 text-white rounded-2xl mt-6 backdrop-blur-sm hover:bg-gray-600 transition-all ease-in-out'>Order now</button>
-</div>
+     
     </div>
+
 
 <div className="chooseUs mt-20 container mx-auto px-4">
   <h2 className='text-center text-5xl font-[family-name:main-font] font-bold text-gray-800'>Why choose us?</h2>
