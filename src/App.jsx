@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 
@@ -10,16 +10,16 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 
 import Home from "./pages/home/Home";
-import Menu from "/pages/menu/Menu";
-import Cart from "/pages/cart/Cart";
-import Register from "/pages/register/Register"; 
-import Login from "/pages/login/login";
-import Checkout from "/pages/checkout/checkout";
-import Orders from '/pages/orders/orders'
-import Category from '/pages/category/Category';
-import ProductPage from "/pages/productDetails/ProductDetails";
-import CategoriesSection from "/pages/CategoriesPage/CategoriesPage";
-import PaymentCards from "/pages/payment/Payment";
+import Menu from "./pages/menu/Menu";
+import Cart from "./pages/cart/Cart";
+import Register from "./pages/register/Register"; 
+import Login from "./pages/login/Login";
+import Checkout from "./pages/checkout/Checkout";
+import Orders from './pages/orders/Orders';
+import Category from './pages/category/Category';
+import ProductPage from "./pages/productDetails/ProductDetails";
+import CategoriesSection from "./pages/CategoriesPage/CategoriesPage";
+import PaymentCards from "./pages/payment/Payment";
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/B-laban/" element={<Home />} />
               <Route path="/menu" element={<Menu />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/register" element={<Register />} /> 
